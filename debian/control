@@ -1,0 +1,15 @@
+Source: nemo-qml-plugin-configuration
+Section: libs
+Priority: optional
+Maintainer: Mohammed Sameer <msameer@foolab.org>
+Build-Depends: debhelper (>= 9),
+	       qtbase5-dev,
+	       libmlite-dev,
+               qtdeclarative5-dev
+Standards-Version: 3.9.6
+
+Package: qml-module-org-nemomobile-configuration
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Configuration plugin for Nemo Mobile
+ Configuration plugin for Nemo Mobile

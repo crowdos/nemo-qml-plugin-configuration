@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@ --builddirectory=nemo-qml-plugin-configuration --sourcedirectory=nemo-qml-plugin-configuration --parallel
+
+override_dh_install:
+	dh_install --fail-missing
+	rm -rf debian/nemo-qml-plugin-configuration/opt/
